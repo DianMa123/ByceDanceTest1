@@ -1,0 +1,81 @@
+Start testing: Jan 21 16:15 CST
+----------------------------------------------------------
+1/2 Testing: database_project_csv_data_loader_test
+1/2 Test: database_project_csv_data_loader_test
+Command: "/home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/test/lab1/csv_data_loader_test"
+Directory: /home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/test/lab1
+"database_project_csv_data_loader_test" start time: Jan 21 16:15 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CsvDataLoaderTest
+[ RUN      ] CsvDataLoaderTest.BasicTest
+[       OK ] CsvDataLoaderTest.BasicTest (0 ms)
+[----------] 1 test from CsvDataLoaderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"database_project_csv_data_loader_test" end time: Jan 21 16:15 CST
+"database_project_csv_data_loader_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: database_project_lab1_test
+2/2 Test: database_project_lab1_test
+Command: "/home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/test/lab1/lab1_test"
+Directory: /home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/test/lab1
+"database_project_lab1_test" start time: Jan 21 16:15 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/tmp_download/googletest/googletest/src/gtest_main.cc
+[==========] Running 14 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 14 tests from Lab1Test
+[ RUN      ] Lab1Test.TestRowTable
+[       OK ] Lab1Test.TestRowTable (0 ms)
+[ RUN      ] Lab1Test.TestRowTable_GetIntField1
+[       OK ] Lab1Test.TestRowTable_GetIntField1 (0 ms)
+[ RUN      ] Lab1Test.TestRowTable_PredicatedAllColumnsSum1
+[       OK ] Lab1Test.TestRowTable_PredicatedAllColumnsSum1 (0 ms)
+[ RUN      ] Lab1Test.TestRowTable_PredicatedColumnSum1
+[       OK ] Lab1Test.TestRowTable_PredicatedColumnSum1 (0 ms)
+[ RUN      ] Lab1Test.TestRowTable_PredicatedUpdate1
+[       OK ] Lab1Test.TestRowTable_PredicatedUpdate1 (0 ms)
+[ RUN      ] Lab1Test.TestRowTable_PutIntField1
+[       OK ] Lab1Test.TestRowTable_PutIntField1 (0 ms)
+[ RUN      ] Lab1Test.TestRowTable_UnionTest1
+[       OK ] Lab1Test.TestRowTable_UnionTest1 (0 ms)
+[ RUN      ] Lab1Test.TestColumnTable
+[       OK ] Lab1Test.TestColumnTable (0 ms)
+[ RUN      ] Lab1Test.TestColumnTable_GetIntField1
+[       OK ] Lab1Test.TestColumnTable_GetIntField1 (0 ms)
+[ RUN      ] Lab1Test.TestColumnTable_PredicatedAllColumnsSum1
+[       OK ] Lab1Test.TestColumnTable_PredicatedAllColumnsSum1 (0 ms)
+[ RUN      ] Lab1Test.TestColumnTable_PredicatedColumnSum1
+[       OK ] Lab1Test.TestColumnTable_PredicatedColumnSum1 (0 ms)
+[ RUN      ] Lab1Test.TestColumnTable_PredicatedUpdate1
+[       OK ] Lab1Test.TestColumnTable_PredicatedUpdate1 (0 ms)
+[ RUN      ] Lab1Test.TestColumnTable_PutIntField1
+[       OK ] Lab1Test.TestColumnTable_PutIntField1 (0 ms)
+[ RUN      ] Lab1Test.TestRowTable_UnionTest2
+[       OK ] Lab1Test.TestRowTable_UnionTest2 (0 ms)
+[----------] 14 tests from Lab1Test (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test suite ran. (2 ms total)
+[  PASSED  ] 14 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"database_project_lab1_test" end time: Jan 21 16:15 CST
+"database_project_lab1_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 21 16:15 CST

@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1e2b8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1e2b8.dir/build.make CMakeFiles/cmTC_1e2b8.dir/build
+make[1]: 进入目录“/home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1e2b8.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_1e2b8.dir/CheckSymbolExists.c.o   -c /home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1e2b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e2b8.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_1e2b8.dir/CheckSymbolExists.c.o  -o cmTC_1e2b8 -rdynamic 
+/usr/bin/ld: CMakeFiles/cmTC_1e2b8.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_1e2b8.dir/build.make:98：cmTC_1e2b8] 错误 1
+make[1]: 离开目录“/home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:126：cmTC_1e2b8/fast] 错误 2
+
+File /home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bf7f4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf7f4.dir/build.make CMakeFiles/cmTC_bf7f4.dir/build
+make[1]: 进入目录“/home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_bf7f4.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_bf7f4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bf7f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf7f4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_bf7f4.dir/CheckFunctionExists.c.o  -o cmTC_bf7f4 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_bf7f4.dir/build.make:98：cmTC_bf7f4] 错误 1
+make[1]: 离开目录“/home/kaxi/DanceByteDatabaseProject/bydance2/bytedance-database-project/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:126：cmTC_bf7f4/fast] 错误 2
+
+
